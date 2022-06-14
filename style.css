@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/bg.gif');
+    background-size: cover;
+    position: relative;
+}
+
+#preloader {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    z-index: 8888;
+    overflow: hidden;
+}
+
+#preloader > div {
+    display: inline-block;
+    background-image: url('./assets/logo.png');
+    width: 345px;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(0deg);
+    animation: logo .2s infinite cubic-bezier(1, 1.01, 0, 0.01);
+}
+
+#app {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+
+.card {
+    min-width: 320px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+label {
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.red {
+    color: brown;
+    font-weight: bold;
+}
+
+#alert {
+    display: none;
+    position: fixed; 
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: red;
+    background-image: url('./assets/alert.gif');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}

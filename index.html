@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norbel BBQ</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css?14062022-004">
+</head>
+<body>
+    <section id="preloader">
+        <div></div>
+    </section>
+
+    <section id="app">
+        <form>      
+            <div class="card mb-20px">
+                <div class="card-header">
+                    Ваши данные
+                </div>
+                <div class="card-body">
+                    <div class="col-auto">
+                        <input type="text" id="inputName" name="inputName" class="form-control" aria-describedby="inputName" placeholder="Имя" required>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="col-auto">
+                        <label for="inputName" class="col-form-label" id="label-text">Кол-во человек с Вами</label>
+                    </div>
+                    <div class="col-auto">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="countPeople" name="countPeople" value="Буду с друзьями">
+                              <label class="form-check-label" for="countPeople">Буду с друзьями</label>
+                            </div> </br>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="countPeople1" name="countPeople" value="Буду один">
+                              <label class="form-check-label" for="countPeople1">У меня нет друзей (Буду один)</label>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card mb-20px">
+                <div class="card-header">
+                    Цели поездки
+                </div>
+                <div class="card-body">
+                      <div class="col-auto">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="terget" name="terget" value="Культурно посидеть в трудовом коллективе">
+                              <label class="form-check-label" for="terget">Культурно посидеть в трудовом коллективе</label>
+                            </div> </br>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="terget2" name="terget" value="Побалдеть на природе">
+                              <label class="form-check-label" for="terget2">Побалдеть на природе</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="terget2" name="terget" value="Пригубить пенного">
+                                <label class="form-check-label" for="terget3">Пригубить пенного</label>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card mb-20px">
+                <div class="card-header">
+                    Продолжительность балдежа
+                </div>
+                <div class="card-body">
+                      <div class="col-auto">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="time" name="time" value="быстренько">
+                              <label class="form-check-label" for="time">Мы быстро — по полшашлычинки и домой!</label>
+                            </div> </br>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="time1" name="time" value="нормально так">
+                              <label class="form-check-label" for="time1">Нормально посидим!</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="time2" name="time" value="до победного">
+                                <label class="form-check-label" for="time2">Пока мангал не развалится или Артур не сопьется! (До последней электрички)</label>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card mb-20px">
+                <div class="card-header">
+                    Игры
+                </div>
+                <div class="card-body">
+                      <div class="col-auto">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="game" name="game" value="Волейбол">
+                              <label class="form-check-label" for="game">Волейбол</label>
+                            </div> </br>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="game2" name="game" value="Бадминтон">
+                              <label class="form-check-label" for="game2">Бадминтон</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="game3" name="game" value="Пригубить пенного">
+                                <label class="form-check-label" for="game3">Пригубить пенного</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="game4" name="game" value="Все сразу">
+                                <label class="form-check-label" for="game4">Все сразу</label>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card mb-20px">
+                <div class="card-header">
+                    Меню: галло обед
+                </div>
+                <div class="card-body">
+                      <div class="col-auto">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="menu" name="menu" value="Свинина">
+                              <label class="form-check-label" for="menu">Свинина</label>
+                            </div> </br>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="menu2" name="menu" value="Говядина">
+                              <label class="form-check-label" for="menu2">Говядина</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="menu3" name="menu" value="Курица">
+                                <label class="form-check-label" for="menu3">Курица</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="menu4" name="menu" value="Рыба">
+                                <label class="form-check-label" for="menu4">Рыба</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="menu5" name="menu" value="Шампиньоны">
+                                <label class="form-check-label" for="menu5">Шампиньоны</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="menu6" name="menu" value="Овощи">
+                                <label class="form-check-label" for="menu6">Овощи ( помидоры, огурецы, перчик )</label>
+                            </div></br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="menu7" name="menu" value="Cоус">
+                                <label class="form-check-label" for="menu7">Cоус (BBQ, Кисло-сладкий, поострее)</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="menu8" name="menu" value="Колбаски">
+                                <label class="form-check-label" for="menu8">Колбаски на хот-дог</label>
+                            </div></br>
+                      </div>
+                </div>
+                <div class="card-footer">
+                    <input type="text" id="inputName" name="menuOther" class="form-control" aria-describedby="inputName" placeholder="Другое (через зяпятую)" >
+
+                </div>
+            </div>
+
+            <div class="card mb-20px">
+                <div class="card-header">
+                    Меню: галло заплыв
+                </div>
+                <div class="card-body">
+                    <span class="red">!</span> Алкоголь не влючен в общий тариф, у нас есть хлопцы за рулем.
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-dark" id="add_button">Гульнуть!</button>
+        </form>
+
+    </section>
+
+    <section id="alert">
+        Отлично!</br>Пожелания приняты!
+    </section>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./app.js?14062022-004"></script>
+</body>
+</html>
